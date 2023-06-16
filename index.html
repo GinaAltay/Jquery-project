@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      h1 {
+        display: flex;
+        justify-content: center;
+        color: hotpink;
+        left: 30px;
+        margin: 100px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+      }
+      .item {
+        height: 100px;
+        border: 1px solid #0088cc;
+        font-size: 50px;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+      }
+
+      #playAgain {
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="grid">
+      <div class="item" data-index="1"></div>
+      <div class="item" data-index="2"></div>
+      <div class="item" data-index="3"></div>
+      <div class="item" data-index="4"></div>
+      <div class="item" data-index="5"></div>
+      <div class="item" data-index="6"></div>
+      <div class="item" data-index="7"></div>
+      <div class="item" data-index="8"></div>
+      <div class="item" data-index="9"></div>
+      <div id="gameResult"></div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="Game.js"></script>
+  </body>
+</html>
